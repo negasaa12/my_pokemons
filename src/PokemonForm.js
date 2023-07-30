@@ -4,9 +4,9 @@ import "./PokemonForm.css";
 
 const PokemonForm = ({getData})=>{
 
-        const initial_state = [{
+        const initial_state = {
             name: ""
-        }]
+        }
         const [formData, setFormData]= useState(initial_state);
 
 
@@ -21,13 +21,13 @@ const PokemonForm = ({getData})=>{
         const handleSubtmit = (e)=>{
             e.preventDefault();
             getData(formData.name);
+            setFormData(initial_state);
         }
 
 
     return(
         <div className="pokemon-container">
         <form className="pokemon-form" onSubmit={handleSubtmit}>
-            <label  className="pokemon-label"htmlFor=""> Go For It</label>
             <input
             className="pokemon-input"
             name="name" 
