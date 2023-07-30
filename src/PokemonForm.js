@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-
+import "./PokemonForm.css";
 
 
 const PokemonForm = ({getData})=>{
@@ -25,17 +25,20 @@ const PokemonForm = ({getData})=>{
 
 
     return(
-        <form onSubmit={handleSubtmit}>
-            <label htmlFor=""></label>
+        <div className="pokemon-container">
+        <form className="pokemon-form" onSubmit={handleSubtmit}>
+            <label  className="pokemon-label"htmlFor=""> Go For It</label>
             <input
+            className="pokemon-input"
             name="name" 
             id="name"
             type="text"
             value={formData.name}
             onChange={handleChange}
             />
-            <button> Get Pokemon</button>
+            <button className="pokemon-button"> Get Pokemon</button>
         </form>
+        </div>
     )
 }
 

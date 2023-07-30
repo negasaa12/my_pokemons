@@ -1,0 +1,18 @@
+
+
+
+.Pokemon-container {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+
+}
+
+
+
+.Pokemon-card {
+    flex: 0 0 220px;
+    margin: 8px;
+  }
+ 

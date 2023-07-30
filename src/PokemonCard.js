@@ -4,7 +4,7 @@ import "./PokemonCard.css"
 
 
 
-const PokemonCard = ({ image, name, id, height, experience }) => {
+const PokemonCard = ({ image, name, id, height, experience, weight }) => {
   return (
     <div className="pokemon-card">
       <h5 className="pokemon-name">{name}</h5>
@@ -16,6 +16,9 @@ const PokemonCard = ({ image, name, id, height, experience }) => {
           </li>
           <li>
             <strong>Height:</strong> {height}
+          </li>
+          <li>
+            <strong>Weight</strong> {weight}
           </li>
         </ul>
       </div>
